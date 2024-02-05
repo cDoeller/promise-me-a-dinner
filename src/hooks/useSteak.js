@@ -42,7 +42,9 @@ function useSteak() {
       })
       .then((step7) => {
         addItem(step7);
-        return obtainInstruction(food, 8);
+      })
+      .then(() => {
+        addItem("Steak is ready");
       });
 
     // Don't change the code below this line
