@@ -45,6 +45,9 @@ function useSteak() {
       })
       .then(() => {
         addItem("Steak is ready");
+      })
+      .catch((err) => {
+        console.log(err);
       });
 
     // Don't change the code below this line

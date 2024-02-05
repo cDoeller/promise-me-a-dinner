@@ -26,6 +26,7 @@ function useBroccoli() {
       addItem(step5);
       const step6 = await obtainInstruction(food, 6);
       addItem(step6);
+      addItem("Broccoli is ready.");
     } catch (err) {
       console.log(err);
     }
